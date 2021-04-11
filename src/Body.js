@@ -55,16 +55,16 @@ function Body() {
         </div>
         <div className="row justify-content-space-center mt-4  m-0">
           <div className="col-lg-3 d-flex justify-content-center col-sm-12 mb-4">
-            <img className="image" src={image2} />
+            <img alt="this" className="image" src={image2} />
           </div>
           <div className="col-lg-3 d-flex justify-content-center col-sm-12 mb-4">
-            <img className="image" src={image3} />
+            <img alt="this" className="image" src={image3} />
           </div>
           <div className="col-lg-3 d-flex justify-content-center col-sm-12 mb-4">
-            <img className="image" src={image4} />
+            <img alt="this" className="image" src={image4} />
           </div>
           <div className="col-lg-3 d-flex justify-content-center col-sm-12 mb-4">
-            <img className="image" src={image5} />
+            <img alt="this" className="image" src={image5} />
           </div>
         </div>
       </div>

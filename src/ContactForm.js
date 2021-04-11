@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import ErrorIcon from "@material-ui/icons/Error";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./ContactForm.css";
 
@@ -26,8 +25,7 @@ const ContactForm = () => {
 
   const [firstnameBlur, setFirstnameBlur] = useState(0);
   const [emailBlur, setEmailBlur] = useState(0);
-  const [error, setError] = useState("");
-  const [send, setSend] = useState(false);
+
   const reCaptcha = useRef();
   const formWrapper = useRef();
 
@@ -120,18 +118,12 @@ const ContactForm = () => {
               setForm({ ...form, token: "" });
             }}
           />
-          <span className="text-danger">{error}</span>
         </div>
         <div className="d-flex justify-content-center">
           <button type="submit" className="btn btn-dark p-3">
             <span className="h5">Submit Query</span>
           </button>
         </div>
-        {send ? (
-          <div className="text-center text-success mt-2">
-            <CheckCircleIcon /> Your query is on it's way
-          </div>
-        ) : null}
       </form>
     </div>
   );
