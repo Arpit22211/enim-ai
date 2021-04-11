@@ -1,0 +1,99 @@
+.full {
+  background-color: #fefcff;
+  width: 100%;
+}
+.brand {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Lobster Two", cursive;
+  text-shadow: 2px 2px grey;
+}
+
+.list {
+  display: flex;
+}
+.menu2 {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  z-index: 1;
+  background-color: #fefcff;
+  width: 100%;
+}
+.fix {
+  background-color: lightgrey;
+}
+
+#navb {
+  overflow: hidden;
+}
+
+.nav-link {
+  font-size: 19px;
+  color: black;
+}
+
+.LinkButton {
+  background-color: #4caf50;
+  border-radius: 5%;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 11px;
+  padding-right: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.LinkButton1 {
+  font-size: 1.2rem;
+  background-color: black;
+  color: white !important;
+  border: 2px solid black;
+  width: 6rem;
+}
+.LinkButton2 {
+  font-size: 1.2rem;
+  background-color: white;
+  color: black !important;
+  border: 2px solid black;
+  width: 6rem;
+}
+
+.LinkButton1:hover {
+  background-color: white;
+  color: black !important;
+  text-decoration: none;
+  border: 2px solid black;
+}
+.LinkButton2:hover {
+  background-color: black;
+  color: white !important;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .logoHeader {
+    width: 5rem;
+    cursor: pointer;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .title {
+    font-size: 10vw;
+  }
+  .logoHeader {
+    width: 5rem;
+  }
+}
